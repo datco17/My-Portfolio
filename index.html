@@ -11,23 +11,22 @@
 
   <div id="header">
     <div class="container max-w-full">
-      <nav class="flex flex-row items-center justify-between flex-wrap">
-        
-          <img src="images/logotiendat.png" class="logo">
-        <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-       <li><a href="#about">About</a></li>
-       <li><a href="#services">Services</a></li>
-       <li><a href="#portfolio">Portfolio</a></li>
-       <li><a href="#contact">Contact</a></li>
-       <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-       </ul>
-       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-
+      <nav class="navbar">
+  <img src="images/logotiendat.png" class="logo" />
+  <ul id="sidemenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <a href="images/CV-Nguyễn Bá Tiến Đạt.pdf" download class="btn btn2">Download CV</a>
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+  </ul>
+  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+      <div class="header-text flex flex-col justify-start items-start">
         <h1>Hi, I'm <span>Tien Dat</span><br>From Vietnam</h1>
-<span class="header-text" id="type"></span>
+        <a href="#portfolio" class="btn">Go to my Works</a>
+<!-- <span class="header-text" id="type"></span> -->
   </div>
   <script>
     const texts = [
@@ -123,16 +122,26 @@
 
           <div class="tab-contents" id="Major">
             <ul>
-              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-              <li><span>Printing Design</span><br>Design that speaks in print</li>
-              <li><span>Graphic Design</span><br>Social Media Design</li>
+              <li><span>UI/UX</span><br>Proficient in building competencies in UX/UI and interaction design, with a foundation in visual design.</li>
+              <li><span>Front-end Development</span><br>Knowledgeable in HTML, CSS, and JavaScript, enhancing the ability to create and understand web designs.</li>
+              <li><span>Graphic Design</span><br>Communicates ideas through images, text, and layout</li>
             </ul>
           </div>
           
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>2021</span><br>Internship At Kha Kim Trading and Service Joint Stock Company</li>
-              <li><span>2022-2023</span><br>Graphic Design At AS Investment Trading Service Company Limited</li>
+              <li><span>Internship At Kha Kim Trading and Service Joint Stock Company (2021)</span>
+                <br>- POD design for products: pants, shirts, blankets, sheets, pillows, paintings,...
+                <br>- Design posters, banners for new product launch events
+
+              </li>
+              <li><span>Graphic Design At AS Investment Trading Service Company Limited (2022-2023)</span>
+                <br>- Process images to post on websites, fanpages
+                <br>- Design banners, posters, brochures, standees,...
+                <br>- Create intros for exclusive product advertising videos
+                <br>- In charge of printing for the company
+                <br>- Design posters, backdrops,... for internal events
+              </li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
@@ -146,45 +155,11 @@
     </div>
   </div>
 
-<!-- -----------services---------- -->
-
-  <div id="services">
-    <div class="flex flex-row justify-center">
-    <div class="container max-w-full">
-      <h1 class="sub-tittle flex flex-row justify-center">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2 class="font-bold font-sans h2">Web Design</h2>
-          <p>I create modern, responsive websites that look great on all devices.
-From landing pages to full business sites, i turn your ideas into digital experiences that work.</p>
-          <!-- <a href="#">Learn More</a> -->
-        </div>
-        <div>
-          <i class="fa-solid fa-code-compare"></i>
-          <h2 class="font-bold font-sans h2">UI/UX Design</h2>
-          <p>I focus on usability, clarity, and consistency to design intuitive user experiences.
-From wireframes to interactive prototypes, we design flows that keep users engaged.</p>
-          <!-- <a href="#">Learn More</a> -->
-        </div>
-        <div>
-          <i class="fa-solid fa-pen-ruler"></i>
-          <h2 class="font-bold font-sans h2">Graphic Design</h2>
-          <p>High-quality graphics that communicate your brand.
-From logos and posters to complete brand identity systems — I design with creativity and purpose.</p>
-          <!-- <a href="#">Learn More</a> -->
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <!-- ------------portfolio---------- -->
-
+<!-- -----------portfolio---------- -->
 <div id="portfolio">
   <div class="flex flex-row justify-center">
   <div class="container max-w-full">
-    <h1 class="sub-tittle flex flex-row justify-center">My Work</h1>
+    <h1 class="sub-tittle flex flex-row justify-center">My Works</h1>
     <div class="work-list">
       <div class="work">
         <img src="images/vgear.png">
@@ -217,6 +192,52 @@ From logos and posters to complete brand identity systems — I design with crea
   </div>
   </div>
 </div>
+  
+
+  <!-- ------------services---------- -->
+
+<div id="services">
+    <div class="flex flex-row justify-center">
+    <div class="container max-w-full">
+      <h1 class="sub-tittle flex flex-row justify-center">Major Field</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2 class="font-bold font-sans h2">UI/UX Design</h2>
+          <h3>Proficient in building competencies in UX/UI and interaction design, with a foundation in visual design.
+</h3>
+          <h3>Research user needs</h3>
+          <h3>Plan user flows</h3>
+          <h3>Create wireframes</h3>
+          <h3>Design clean, attractive layouts</h3>
+          <h3>Choose colors, fonts, icons, and visuals</h3>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-code-compare"></i>
+          <h2 class="font-bold font-sans h2">Front-End Development</h2>
+          <h3>Knowledgeable in HTML, CSS, and JavaScript, enhancing the ability to create and understand web designs.
+</h3>
+<h3>Turn UI/UX designs into functional websites</h3>
+<h3>Use HTML, CSS, and JavaScript to build interfaces</h3>
+<h3>Make websites responsive across all devices</h3>
+<h3>Add animations and interactive features</h3>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h2 class="font-bold font-sans h2">Graphic Design</h2>
+          <h3>Communicates ideas through images, text, and layout</h3>
+          <h3>Create visual content for print and digital media</h3>
+          <h3>Design posters, banners, brochures, social media posts</h3>
+          <h3>Choose colors, fonts, and layouts that match brand identity</h3>
+          <h3>Use tools like Adobe Photoshop, Illustrator, Figma</h3>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 
 <!-- ---------------contact------------- -->
 
@@ -231,10 +252,10 @@ From logos and posters to complete brand identity systems — I design with crea
         <div class="social-icons">
           <a href="https://www.facebook.com/datcolatui/?locale=vi_VN"><i class="fa-brands fa-facebook"></i></a>
           <a href="https://discord.gg/f97pJwKW"><i class="fa-brands fa-discord"></i></a>
-          <a href="https://www.instagram.com/_.datco.ne"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.behance.net/tnguyn503"><i class="fa-brands fa-behance"></i></a>
           <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-%C4%91%E1%BA%A1t-bbaa602b0/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <a href="images/CV-Nguyễn Bá Tiến Đạt.pdf" download class="btn btn2">Download CV</a>
+        
       </div>
       <!-- <div class="contact-right">
         <form>
